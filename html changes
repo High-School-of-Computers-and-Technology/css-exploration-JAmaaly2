@@ -1,3 +1,8 @@
+---
+
+### 1. HTML Document (index.html)
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,6 @@
 </head>
 <body>
   <header id="main-header">
-
     <h1>Welcome to CSS Selectors Practice</h1>
     <p class="subtitle">Learn how to use IDs, classes, and tags with CSS.</p>
   </header>
@@ -32,7 +36,11 @@
   </section>
 </body>
 </html>
+```
 
+### 2. CSS File (styles.css)
+
+```css
 /* Tag selector */
 body {
   font-family: Arial, sans-serif;
@@ -89,3 +97,6 @@ footer {
 a:hover {
   color: #ff4500;
 }
+```
+
+---
