@@ -51,7 +51,7 @@ body {
 
 /* ID selectors */
 #main-header {
-  background-color: #333;
+  background-color: #532;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -89,7 +89,7 @@ footer {
 }
 
 .footer-link {
-  color: #ffa500;
+  color: #ffa700;
   text-decoration: none;
 }
 
