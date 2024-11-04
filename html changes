@@ -1,0 +1,142 @@
+1. HTML Document (index.html)
+CopyReplit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="main-header">
+    <h1>Welcome to CSS Selectors Practice</h1>
+    <p class="subtitle">Learn how to use IDs, classes, and tags with CSS.</p>
+  </header>
+
+  <section class="content">
+    <article id="intro">
+      <h2>Introduction</h2>
+      <p>This section introduces basic concepts for using CSS selectors to style HTML.</p>
+    </article>
+
+    <article id="examples">
+      <h2>Examples</h2>
+      <p class="highlight">Use different selectors to change the appearance of this text.</p>
+      <p class="highlight">Try styling elements based on IDs, classes, and tags.</p>
+    </article>
+
+    <footer id="main-footer">
+      <p>&copy; 2024 CSS Practice</p>
+      <p class="footer-link">Learn more about CSS on <a href="https://www.w3schools.com/css/">W3Schools</a>.</p>
+    </footer>
+  </section>
+</body>
+</html>
+2. CSS File (styles.css)
+CopyReplit
+/* Tag selector */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+}
+
+/* ID selectors */
+#main-header {
+  background-color: #005580; /* Changed for contrast */
+  color: #fff; /* Text color remains white */
+  padding: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Added text shadow */
+}
+
+#intro, 
+#examples {
+  border: 2px solid #ccc; /* Border for articles */
+  margin: 20px 0; /* Margin to separate articles */
+}
+
+#intro {
+  background-color: #e6f7ff;
+  padding: 15px;
+  border-left: 5px solid #0099cc;
+}
+
+#examples {
+  background-color: #e6ffe6;
+  padding: 15px;
+  border-left: 5px solid #33cc33;
+}
+
+/* Class selectors */
+.subtitle {
+  font-family: 'Courier New', Courier, monospace; /* Different font family */
+  font-size: 1.5em; /* Increased font size */
+  color: #444; /* Darker color */
+}
+
+.highlight {
+  font-weight: bold;
+  color: #005580; /* Darker highlight color */
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  padding: 5px; /* Padding inside highlights */
+}
+
+/* Element selector */
+footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-link {
+  color: #ffa500; /* Orange link color */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-link:hover {
+  color: #ff4500; /* Hover color */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Tag selector with class */
+a:hover {
+  color: #ff4500; /* Change link color on hover */
+}
+
+/* Margins and spacing */
+.content {
+  max-width: 600px; /* Max width centered */
+  margin: auto; /* Centered */
+}
+
+/* Specific styles for h2 elements */
+h2 {
+  font-size: 1.8em; /* Increased font size for headers */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Shadow for h2 */
+}
+
+/* First paragraph in #examples */
+#examples p:first-of-type {
+  font-weight: bold; /* Make first paragraph bold */
+}
+
+/* nth-child example for highlights */
+#examples .highlight:nth-child(2) {
+  background-color: rgba(220, 240, 220, 0.5); /* Different background for every second highlight */
+}
+
+/* Center align text in header */
+#main-header {
+  text-align: center; /* Centering */
+}
+
+/* Transform effects for h1 */
+#main-header h1:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: transform 0.2s; /* Smooth transition */
+}
